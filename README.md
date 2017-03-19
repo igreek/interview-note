@@ -165,6 +165,10 @@
 
 1. Servlet的生命周期？
 2. Session/Cookie的区别？
+    - Cookie 是存储在客户端的，Session 是存储在服务器端的
+    -  Cookie安全性低,Session相对安全性要求高
+    - 单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。
+    - 对性能要求高的时候，不适合使用 Session 的，因为 Session 会一直存在服务器的，直到当前 Session 过期，而且 Cookie 存储是字符串类型的信息，而 Session 可以存储任何形式的信息，Session 也不存在访问域的限制。
 3. SpringMVC与Struts2的比较
 4. 拦截器与过滤器的区别？
 
